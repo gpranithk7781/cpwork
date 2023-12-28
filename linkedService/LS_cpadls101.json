@@ -1,0 +1,22 @@
+{
+	"name": "LS_cpadls101",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://cpadls101.dfs.core.windows.net",
+			"accountKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_PranithCPKeys",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "cpadls101keys"
+			}
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
