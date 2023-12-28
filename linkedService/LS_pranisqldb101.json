@@ -1,0 +1,21 @@
+{
+	"name": "LS_pranisqldb101",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_PranithCPKeys",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "pranisqldb101connection"
+			}
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
