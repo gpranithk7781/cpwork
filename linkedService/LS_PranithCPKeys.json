@@ -1,0 +1,11 @@
+{
+	"name": "LS_PranithCPKeys",
+	"properties": {
+		"description": "This is the linked service for ",
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://PranithCPKeys.vault.azure.net/"
+		}
+	}
+}
